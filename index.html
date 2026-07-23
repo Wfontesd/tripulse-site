@@ -1,20 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tripulse</title>
-  <style>
-    body { font-family: system-ui, sans-serif; display: grid; place-items: center; min-height: 100vh; margin: 0; background: #0f172a; color: #e2e8f0; }
-    main { text-align: center; }
-    h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    p { color: #94a3b8; }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>Tripulse</h1>
-    <p>Site en construction.</p>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#05060f" />
+    <title>3-PULSE</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #05060f;
+      }
+      #app {
+        position: fixed;
+        inset: 0;
+      }
+      #app canvas {
+        display: block;
+      }
+      #ui {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-CKAF3_wr.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CBlrn4bq.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="ui"></div>
+  </body>
 </html>
