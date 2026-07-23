@@ -1,4 +1,4 @@
-const CACHE_NAME = '3-pulse-v1';
+const CACHE_NAME = '3-pulse-neon-nexus-v2';
 const ROOT = new URL('./', self.registration.scope).href;
 const CORE_ASSETS = [
   ROOT,
@@ -7,6 +7,10 @@ const CORE_ASSETS = [
   new URL('icons/icon-192.png', ROOT).href,
   new URL('icons/icon-512.png', ROOT).href,
   new URL('icons/icon.svg', ROOT).href,
+  new URL('art/nexus-hall-1280.webp', ROOT).href,
+  new URL('art/nexus-hall-1920.webp', ROOT).href,
+  new URL('art/pulse-station-1280.webp', ROOT).href,
+  new URL('art/pulse-station-1920.webp', ROOT).href,
 ];
 
 self.addEventListener('install', (event) => {
