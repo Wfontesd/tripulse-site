@@ -1,9 +1,10 @@
-const CACHE_NAME = '3-pulse-neon-nexus-v2';
+const CACHE_NAME = '3-pulse-neon-nexus-v3';
 const ROOT = new URL('./', self.registration.scope).href;
 const CORE_ASSETS = [
   ROOT,
   new URL('index.html', ROOT).href,
   new URL('manifest.webmanifest', ROOT).href,
+  new URL('canvaskit.wasm', ROOT).href,
   new URL('icons/icon-192.png', ROOT).href,
   new URL('icons/icon-512.png', ROOT).href,
   new URL('icons/icon.svg', ROOT).href,
