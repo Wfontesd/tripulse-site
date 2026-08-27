@@ -1,5 +1,9 @@
-const CACHE = 'tutovie-v1';
-const ASSETS = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest', './icon.svg'];
+const CACHE = 'tutovie-v2';
+const ASSETS = [
+  './', './index.html', './base.css', './components.css', './screens.css',
+  './core.js', './onboarding.js', './screens.js', './actions.js',
+  './manifest.webmanifest', './icon.svg'
+];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS))));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key))))));
 self.addEventListener('fetch', event => {
