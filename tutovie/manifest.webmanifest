@@ -1,0 +1,19 @@
+{
+  "name": "TutoVie — le tuto de la vie adulte",
+  "short_name": "TutoVie",
+  "description": "Les démarches étudiantes dans le bon ordre.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f6ff",
+  "theme_color": "#6c4dff",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
