@@ -1,0 +1,15 @@
+name: TutoVie source snapshot
+on:
+  push:
+    branches: [tutovie-guided-budget]
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tutovie-pages-source
+          path: tutovie
